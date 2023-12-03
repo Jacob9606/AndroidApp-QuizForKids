@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="295dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="76dp"
+        app:srcCompat="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <android.widget.Button
+        android:id="@+id/cartoonButton"
+        android:layout_width="144dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Cartoon"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <android.widget.Button
+        android:id="@+id/logoffButton"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_button"
+        android:text="Log-off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartoonButton" />
+
+    <android.widget.Button
+        android:id="@+id/animalButton"
+        android:layout_width="143dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_button"
+        android:text="Animals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

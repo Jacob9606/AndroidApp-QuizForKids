@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/playCartoon"
+        android:title="playCartoon"
+        android:icon="@drawable/spongebob"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/playAnimal"
+        android:title="playAnimal"
+        android:icon="@drawable/dog"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/history"
+        android:title="Check Earned Points"
+        android:orderInCategory="3"
+        app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/changePasswordMenu"
+        android:title="Change Password"
+        android:orderInCategory="4"
+        app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/instruction"
+        android:title="Instruction/quiz rules"
+        android:orderInCategory="5"
+        app:showAsAction="collapseActionView" />
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Your existing layout code goes here -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="231dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/Question4Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:text="Question4"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/randomAnimalImg"
+            android:layout_width="347dp"
+            android:layout_height="217dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/guessedAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/randomAnimalImg" />
+
+        <android.widget.Button
+            android:id="@+id/confirmButton"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#0025EE"
+            android:text="Confirm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guessedAnswer" />
+
+        <android.widget.Button
+            android:id="@+id/previousButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:text="previous"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmButton" />
+
+        <android.widget.Button
+            android:id="@+id/nextButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="276dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:text="Next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmButton" />
+
+        <include
+            layout="@layout/toolbar_main"
+            android:id="@+id/toolbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+

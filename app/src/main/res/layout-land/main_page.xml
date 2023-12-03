@@ -1,0 +1,50 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="395dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <android.widget.Button
+        android:id="@+id/cartoonButton"
+        android:layout_width="156dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="120dp"
+        android:text="Cartoon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <android.widget.Button
+        android:id="@+id/logoffButton"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:text="Log-off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartoonButton" />
+
+    <android.widget.Button
+        android:id="@+id/animalButton"
+        android:layout_width="156dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="36dp"
+        android:text="Animals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

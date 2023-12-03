@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Your existing layout code goes here -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="231dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+        <android.widget.Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="236dp"
+            android:background="@drawable/rounded_button"
+            android:text="LET`S PLAY AGAIN!"
+            android:textColor="#0025EE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
+
+
+        <android.widget.Button
+            android:id="@+id/animalQuizButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:text="LET`S PLAY ANIMAL QUIZ!"
+            android:textColor="#0025EE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playAgainButton" />
+
+        <android.widget.Button
+            android:id="@+id/homeButton"
+            android:layout_width="170dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="GO BACK TO HOME"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playAgainButton" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_main"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="385dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
